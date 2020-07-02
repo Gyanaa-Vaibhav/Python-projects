@@ -29,7 +29,7 @@ print(f'Hi {Guest_list[3]} i invite you to my dinner')
 # can’t make the dinner, so you need to send out a new set of invitations.
 # You’ll have to think of someone else to invite.
 del Guest_list[1:3]
-Updates_list = ['Name5','Nmae6','Name7']
+Updates_list = ['Name5', 'Nmae6', 'Name7']
 Guest_list.append(Updates_list[0])
 Guest_list.append(Updates_list[1])
 Guest_list.append(Updates_list[2])
@@ -49,15 +49,15 @@ Guest_list.insert(1, 'Name10')
 Guest_list.append('Name11')
 print(Guest_list)
 
-#3-7. Shrinking Guest List: You just found out that your new dinner table
+# 3-7. Shrinking Guest List: You just found out that your new dinner table
 # won’t arrive in time for the dinner, and you have space for only two guests.
 unknowm = [Guest_list.pop(1),
-Guest_list.pop(5),
-Guest_list.pop(2),
-Guest_list.pop(4),
-Guest_list.pop(-1),
-Guest_list.pop(0)
-]
+           Guest_list.pop(5),
+           Guest_list.pop(2),
+           Guest_list.pop(4),
+           Guest_list.pop(-1),
+           Guest_list.pop(0)
+           ]
 
 print(f'Sorry Yo\'re Not allowed in my dinner {unknowm[0]}')
 print(f'Sorry Yo\'re Not allowed in my dinner {unknowm[1]}')
@@ -68,3 +68,41 @@ print(f'Sorry Yo\'re Not allowed in my dinner {unknowm[5]}')
 
 print(f'you are in the party {Guest_list[0]} congrats!!')
 print(f'you are in the party {Guest_list[1]} congrats!!')
+
+# 3-8. Seeing the World: Think of at least five places in
+# the world you’d like to visit.
+places = ['DPlace', 'EPlace', 'FPlace', 'APlace']
+
+# Use sorted() to print your list in alphabetical order
+# without modifying the actual list.
+print(sorted(places))
+print(places)
+
+# Use sorted() to print your list in reverse alphabetical
+# order without chang- ing the order of the original list.
+print(sorted(places, reverse=True))
+print(places)
+
+# Use reverse() to change the order of your list. Print the list
+# to show that its order has changed.
+places.reverse()
+print(places)
+
+# Use reverse() to change the order of your list again. Print the
+# list to show it’s back to its original order.
+places.reverse()
+print(places)
+
+# Use sort() to change your list so it’s stored in alphabetical order.
+# Print the list to show that its order has been changed.
+places.sort()
+print(places)
+
+# Use sort() to change your list so it’s stored in reverse
+# alphabetical order. Print the list to show that its order has changed.
+places.sort(reverse=True)
+print(places)
+
+# 3-11. Intentional Error: If you haven’t received an index error in
+# one of your programs yet, try to make one happen.
+print(places[7])
